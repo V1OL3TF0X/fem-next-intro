@@ -1,12 +1,12 @@
-module.exports = {
+export default {
   semi: true,
   tabWidth: 2,
   printWidth: 120,
   singleQuote: true,
-  quoteProps: 'as-needed',
-  trailingComma: 'es5',
+  quoteProps: "as-needed",
+  trailingComma: "es5",
   jsxSingleQuote: true,
   bracketSpacing: true,
-  arrowParens: 'always',
+  arrowParens: "always",
   plugins: ["prettier-plugin-tailwindcss"],
-}
+};
