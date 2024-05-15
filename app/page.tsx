@@ -1,5 +1,9 @@
+import NewTodoForm from '@/components/NewTodoForm';
+
 export default function Home() {
   return (
-    <div className="flex items-center justify-center size-full">Home page</div>
+    <div className='flex size-full max-w-2xl items-center justify-center p-4'>
+      <NewTodoForm />
+    </div>
   );
 }

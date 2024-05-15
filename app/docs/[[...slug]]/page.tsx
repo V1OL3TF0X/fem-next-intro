@@ -1,6 +1,6 @@
 const DocsIdPage = ({ params }: { params: { slug: string[] } }) => {
   return (
-    <div className="flex items-center justify-center size-full">
+    <div className='flex size-full items-center justify-center'>
       Docs ID page: <pre>{JSON.stringify(params.slug, null, 2)}</pre>
     </div>
   );
