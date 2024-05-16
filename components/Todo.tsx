@@ -5,7 +5,7 @@ const Todo = <Element extends React.ElementType = 'div'>({
   ...rest
 }: { todo: Prisma.TodoSelect; as?: Element } & React.ComponentPropsWithRef<Element>) => (
   <El {...rest}>
-    <pre>{JSON.stringify(todo)}</pre>
+    <input type='checkbox' checked={todo.completed} /> {todo.content}
   </El>
 );
 
