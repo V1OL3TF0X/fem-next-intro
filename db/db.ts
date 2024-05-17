@@ -5,10 +5,11 @@ let prisma: PrismaClient;
 if (process.env.NODE_ENV === 'production') {
   prisma = new PrismaClient();
 } else {
-  if (!global.prisma) {
-    global.prisma = new PrismaClient();
+  const glob = global as any;
+  if (!glob.prisma) {
+    glob.prisma = new PrismaClient();
   }
-  prisma = global.prisma;
+  prisma = glob.prisma;
 }
 
 export default prisma;

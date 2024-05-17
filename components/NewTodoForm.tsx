@@ -1,6 +1,6 @@
 import Button from './Button';
 
-const NewTodoForm = ({ action }: { action: (data: FormData) => void }) => {
+const NewTodoForm = ({ action }: { action: (data: FormData) => Promise<void> }) => {
   return (
     <div>
       <form action={action} className='flex items-end gap-2'>
